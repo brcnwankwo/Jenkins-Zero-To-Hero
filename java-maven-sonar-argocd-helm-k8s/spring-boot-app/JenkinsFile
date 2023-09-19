@@ -25,7 +25,6 @@ pipeline {
         // DOCKERFILE_LOCATION = "java-maven-sonar-argocd-helm-k8s/spring-boot-app/Dockerfile"
         REGISTRY_CREDENTIALS = credentials('docker-cred')
       }
-    }
     stage('Static Code Analysis') {
       environment {
         SONAR_URL = "http://100.25.134.227:9000"
